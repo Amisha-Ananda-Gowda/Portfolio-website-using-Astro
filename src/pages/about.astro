@@ -1,0 +1,167 @@
+---
+import Icon from '../components/Icon.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CallToAction from '../components/CallToAction.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Amisha Ananda Gowda" description="About Amisha Ananda Gowda ">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About"
+				
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/me.jpg"
+					alt=" Amisha Ananda Gowda "
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Name</h2>
+				<div class="content">
+					<p>
+						Amisha Ananda Gowda
+					</p>
+		
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Date Of Birth</h2>
+				<div class="content">
+					<p>
+						26-02-2003 
+					</p>
+		
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Education</h2>
+				<div class="content">
+					<p><ul><li>Completed my S.S.L.C at Sri Mookambika Public School, Jayendra Nagar,Mavinmane, Golihole.</li>
+						 
+						 <li>Completed my Pre University Education at R.N Shetty Composite PU College, Kundapura.</li>
+						 <li><p>Currently pursuing Bachelor of Engineering in Computer Science and Engineering at St. Joseph Engineering College, Mangaluru.</p><p>Graduation Year:2025</p></li></ul></p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					
+					<p><ul><li>C</li><li>C++</li></ul></p></div>
+				</section>
+				
+			<section>
+				<h2 class="section-title">Address</h2>
+				<div class="content">
+					<p>
+						Kelakairana, Balagonu, Kalthodu, Byndoor Taluk, Udupi District - 576219 
+					</p>
+		
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Hobbies</h2>
+				<div class="content">
+					
+					<p>Doing crafts</p></div>
+				</section>
+				<section>
+				<h2 class="section-title"> Resume</h2>
+				<div class="content">
+					<p>
+						
+					<aside>
+						<CallToAction href="/assets/resume.pdf">
+							Click here to have a look on my Resume
+							<Icon icon ="arrow-right" size="1.2em" />
+						</CallToAction>
+						</aside>
+					</p>
+				</div> </section>
+					
+				
+
+			<section>
+				<h2 class="section-title">Contact </h2>
+				<div class="content">
+					<p>
+						<aside>
+							<h2></h2>
+							<CallToAction href="mailto:21j03.amisha@sjec.ac.in">
+								Click here to message me
+								<Icon icon="paper-plane-tilt" size="1.2em" />
+							</CallToAction>
+						</aside>
+					
+					</p>
+		
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
