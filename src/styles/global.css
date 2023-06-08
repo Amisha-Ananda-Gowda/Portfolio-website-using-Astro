@@ -253,3 +253,16 @@ h5 {
 		gap: 12rem;
 	}
 }
+img:hover{
+	transform: scale(1.1);
+}
+#error:hover{
+	color:red;
+}
+#main:hover{
+	transform: scaleY(1.2);
+
+}
+#section-title:hover{
+	color:rgb(222, 20, 124);
+}
