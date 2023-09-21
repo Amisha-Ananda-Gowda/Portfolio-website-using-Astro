@@ -1,8 +1,8 @@
 ---
-title: Best Hackerrank Solution
+title: Simulink Onramp
 publishDate: 2019-12-01 00:00:00
 img: /assets/c18.png
-img_alt: Certificate for the best Hackerrank solution
+img_alt: Certificate for completion of Simulink onramp couse in MATLAB
 description: |
   
 tags:
