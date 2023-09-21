@@ -1,7 +1,7 @@
 ---
 title: Best Hackerrank Solution
 publishDate: 2019-12-01 00:00:00
-img: /assets/c18.jpg
+img: /assets/c18.png
 img_alt: Certificate for the best Hackerrank solution
 description: |
   
